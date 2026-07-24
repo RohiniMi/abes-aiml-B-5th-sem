@@ -1,3 +1,4 @@
+let a;
 console.log(a);
-var a;
+a= 45;
 console.log(a);
