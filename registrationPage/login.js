@@ -7,9 +7,13 @@ const user = {
     password: "123345"
 }
 btn.addEventListener("click", () => {
+    if(email.value ==="" || password.value===""){
+        div.innerText = "Please enter all fields";
+    }
     if (user.email === email.value) {
         if (user.password === password.value) {
             div.innerText = "Login Successfull";
+            div.style.color = "green";
         } else {
            div.innerText = "Incorrect Password";
         }
